@@ -1,0 +1,37 @@
+DJAA/examples/data
+├── market1501
+│   ├── bounding_box_train/
+│   ├── bounding_box_test/
+│   └── query/
+├── cuhk-sysu
+│   └── CUHK-SYSU
+│       ├── Image/
+│       └── annotation/
+├── msmt17
+│   └── MSMT17_V2
+│       └── market_style/
+│           ├── bounding_box_train/
+│           ├── bounding_box_test/
+│           └── query/
+├── personx
+│   ├── bounding_box_train/
+│   ├── bounding_box_test/
+│   └── query/
+├── viper
+│   └── VIPeR
+├── prid2011
+│   └── prid_2011
+├── grid
+│   └── underground_reid
+├── ilids
+│   └── i-LIDS_Pedestrian
+├── cuhk01
+│   └── campus
+├── cuhk02
+│   └── Dataset
+├── sensereid
+│   └── SenseReID
+├── cuhk03
+│   └── cuhk03_release
+└── 3dpes
+    └── 3DPeS

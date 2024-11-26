@@ -1,0 +1,134 @@
+==========
+Args:Namespace(alpha=0.999, arch='resnet50', batch_size=32, data_dir='D:\\Projects\\Lifelong-ICE\\examples\\data', dataset_source='market1501', dataset_target='market1501', dropout=0, epochs=1, eval_step=10, features=0, height=256, init='', iters=100, k1=30, lambda_kl=20.0, logs_dir='D:\\Projects\\Lifelong-ICE\\examples\\logs', lr=0.00035, mem_num=512, mem_samples=1, milestones=[], min_samples=4, num_instances=4, pooling_type='gem', print_freq=100, rho=0.55, scale_kl=0.2, seed=1, tau_c=0.5, tau_v=0.1, warmup_step=10, weight_decay=0.0005, width=128, workers=8)
+==========
+=> Market1501 loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |   751 |    12936 |         6
+  query    |   750 |     3368 |         6
+  gallery  |   751 |    15913 |         6
+  ----------------------------------------
+=> Cuhk-sysu loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |  5532 |    15088 |         1
+  query    |  2900 |     2900 |         1
+  gallery  |  2900 |     5447 |         1
+  ----------------------------------------
+=> MSMT17 loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |  1041 |    32621 |        15
+  query    |  3060 |    11659 |        15
+  gallery  |  3060 |    82161 |        15
+  ----------------------------------------
+=> iLIDS loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |    59 |      255 |         8
+  query    |    60 |       60 |         6
+  gallery  |    60 |       60 |         6
+  ----------------------------------------
+=> VIPeR loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |   316 |      632 |         2
+  query    |   316 |      632 |         2
+  gallery  |   316 |      632 |         2
+  ----------------------------------------
+=> PRID loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |   100 |      200 |         2
+  query    |   100 |      100 |         1
+  gallery  |   649 |      649 |         1
+  ----------------------------------------
+=> CUHK03 loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |   125 |      250 |         6
+  query    |   125 |      125 |         5
+  gallery  |   126 |      900 |         5
+  ----------------------------------------
+=> CUHK01 loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |   485 |     1940 |         2
+  query    |   486 |      972 |         1
+  gallery  |   486 |      972 |         1
+  ----------------------------------------
+=> CUHK02 loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |  1577 |     6308 |         8
+  query    |   239 |      478 |         1
+  gallery  |   239 |      478 |         1
+  ----------------------------------------
+=> SenseReID loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |  1718 |     4428 |         2
+  query    |   521 |     1040 |         2
+  gallery  |  1718 |     3388 |         2
+  ----------------------------------------
+=> CUHK03 loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |  1367 |    13132 |         2
+  query    |   100 |      965 |         2
+  gallery  |   100 |      965 |         2
+  ----------------------------------------
+=> 3DPeS loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |    97 |      526 |         2
+  query    |    80 |      201 |         1
+  gallery  |    96 |      285 |         1
+  ----------------------------------------
+Extract Features: [50/51]	Time 0.351 (0.605)	Data 0.000 (0.152)	
+Computing jaccard distance...
+Jaccard distance computing time cost: 11.61237382888794
+eps in cluster: 0.550
+Clustering and labeling...
+Label score: 0.1961368868015829
+Epoch 0, current dataset has 2066 labeled samples of 238 ids and 10870 unlabeled samples
+Totally, epoch 0 has 2066 labeled samples of 238 ids
+Learning Rate: 3.5000000000000004e-05
+Epoch: [0][100/100]	Time 0.303 (0.595)	Data 0.000 (0.261)	Loss_ccl 2.383	Loss_ccl_old 0.000	Loss_vcl 0.000	Loss_cam 6.998	Loss_kl_old 0.000	Loss_sce 0.000	Loss_kl 0.000	Prec 63.31%	
+Memory Update
+market_count:512, cuhk_count:0, msmt_count:0
+Training on dataset # 2.
+Extract Features: [50/59]	Time 0.350 (1.779)	Data 0.000 (1.374)	
+Computing jaccard distance...
+Jaccard distance computing time cost: 13.698960304260254
+eps in cluster: 0.550
+Clustering and labeling...
+Epoch 0, old dataset has 512 labeled samples of 512 ids
+Label score: 0.13763135873427215
+Epoch 0, current dataset has 1681 labeled samples of 134 ids and 13407 unlabeled samples
+Totally, epoch 0 has 2193 labeled samples of 646 ids
+Learning Rate: 3.5000000000000004e-05
